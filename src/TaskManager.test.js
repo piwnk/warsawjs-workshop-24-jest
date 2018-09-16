@@ -40,7 +40,7 @@ describe("methods", () => {
       const list = taskManager.getList();
       taskManager.addTask(task, undefined, undefined);
       expect(list.length).toEqual(1);
-      expect(list).toEqual([task]);
+      expect(list[0].name).toEqual(task);
     });
   });
 });

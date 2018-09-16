@@ -1,19 +1,19 @@
 export default class TaskManager {
-    constructor() {
-        this.items = [];
-    }
+  constructor() {
+    this.items = [];
+  }
 
-    getList() {
-        return this.items;
-    }
+  getList() {
+    return this.items;
+  }
 
-    addTask(name, callback, context) {
-        this.items.push({ name, callback, context });
-    }
+  addTask(name, callback, context) {
+    this.items.push({ name, callback, context });
+  }
 
-    run() {
-        this.items.forEach(({ callback, context }) => {
-            callback.call(context);
-        });
-    }
+  run() {
+    this.items.forEach(({ callback, context }) => {
+      callback.call(context);
+    });
+  }
 }

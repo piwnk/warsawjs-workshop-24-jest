@@ -33,4 +33,14 @@ describe("methods", () => {
       expect(list.length).toEqual(0);
     });
   });
+
+  describe("addTask", () => {
+    test("should add one task to new instance of TaskManager", () => {
+      const task = "first task";
+      const list = taskManager.getList();
+      taskManager.addTask(task, undefined, undefined);
+      expect(list.length).toEqual(1);
+      expect(list).toEqual([task]);
+    });
+  });
 });

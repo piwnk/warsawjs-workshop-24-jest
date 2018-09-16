@@ -17,7 +17,6 @@
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.6.0",
-    "jest-jasmine2": "^23.6.0",
     "serve": "^10.0.1"
   }
 }
